@@ -1,0 +1,62 @@
+
+
+/* Global styles */
+body {
+  background-image: url("/images_1.jpeg");
+  background-size: cover;
+  animation: slideBackground 50s linear infinite;
+  -webkit-animation: slideBackground 50s linear infinite; /* For older WebKit browsers */
+  -moz-animation: slideBackground 50s linear infinite; /* For older Mozilla browsers */
+}
+@keyframes slideBackground {
+  0% { background-position: 0 0; }
+  100% { background-position: 100% 0; } /* Move image 100% width to the right */
+}
+
+.container {
+  height: 520px;
+  width: 400px;
+  background-color: rgba(255, 255, 255, 0.03);
+  position: absolute;
+  /* Center the container */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  backdrop-filter: blur(15px);
+  box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-control {
+  background-color: rgba(255, 255, 255, 0.13);
+  border-color: rgba(255, 255, 255, 0.15);
+  color: #fff;
+  /* White text for inputs */
+}
+
+.btn-primary,
+.btn-success {
+  background-color: #151ec9;
+  border-color: rgba(0, 0, 0, 0.2);
+  color: #fff;
+  display: block;
+  /* Show buttons */
+  width: 100%;
+}
+
+label,
+.h2 {
+  color: #fff;
+  /* Black text for labels and heading */
+}
+h2 {
+  color: #fff;
+  padding: 10px;
+  margin-top: 50px;
+  /* Black text for labels and heading */
+}

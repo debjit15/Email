@@ -1,0 +1,97 @@
+/* Root element for consistent rendering */
+html {
+  font-size: 62.5%; /* Base font size for better scalability */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-image: url("/images_1.jpeg");
+  background-size: cover;
+  animation: slideBackground 50s linear infinite;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+}
+
+.logo-container {
+  flex-grow: 1;
+  text-align: center;
+}
+
+.logo-container img {
+  width: 150px;
+  height: auto;
+}
+
+.user-info-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem; /* Added spacing for better readability */
+}
+
+.user-info-container span {
+  font-weight: bold;
+  font-size: 1.2rem; /* Adjusted for better visibility */
+  color: white;
+}
+
+/* Main Section */
+main {
+  display: flex;
+  flex-direction: column; /* Adjusted for better vertical flow */
+  align-items: center;
+  padding: 3rem 0;
+}
+
+.menu-container {
+  display: flex;
+  gap: 20px;
+}
+
+.game-mode-button,
+.settings-button {
+  padding: 1rem 2rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1.4rem; /* Adjusted for better readability */
+  cursor: pointer;
+}
+
+.game-mode-button:hover,
+.settings-button:hover,
+.leaderboard-button:hover {
+  background-color: #eee;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1.5rem;
+}
+
+.leaderboard-button {
+  padding: 1rem 2rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+
+/* Animation */
+@keyframes slideBackground {
+  0% { background-position: 0 0; }
+  100% { background-position: 100% 0; }
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  /* Consider adjusting layout and font sizes for optimal mobile experience */
+}
