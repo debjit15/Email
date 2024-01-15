@@ -15,7 +15,7 @@ const submitButton = document.querySelector("button[type='submit']");
   event.preventDefault();
   const email = loginForm.email.value;
   try {
-  const response = await fetch("https://snakeop.000webhostapp.com/js/check-email.php", {
+  const response = await fetch("./check-email (1).php", {
     method: "POST",
     body: JSON.stringify({ email }),
   });
