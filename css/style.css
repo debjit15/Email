@@ -1,6 +1,6 @@
 /* Replace 'selector' with the actual element selector */
 body {
-  background-image: url("./images_1.jpeg");
+  background-image: url("https://github.com/debjit15/snake/blob/main/images_1.jpeg");
   background-size: cover;
   animation: slideBackground 50s linear infinite;
   -webkit-animation: slideBackground 50s linear infinite; /* For older WebKit browsers */
