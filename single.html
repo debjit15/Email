@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Snake Game</title>
+</head>
+<body>
+
+  <!-- Landing Screen -->
+  <div id="landing-screen" class="container text-center mt-5">
+    <h1>Welcome to Snake Game</h1>
+    <h3><span id="hscore"> 0</span> </h3>
+    <h3><span id="score1"> 0</span> </h3>
+    <button id="play-button" class="btn btn-primary">Play</button>
+  </div>
+
+  <!-- Game Board -->
+<div id="game-board" class="container mt-5" style="display:none;">
+  <div id="top-bar">
+    <div id="profile-section">
+      <img id="profile-image" src="images.jpeg" alt="Profile Image">
+      <span id="username">Username</span>
+    </div>
+    <div id="score-section">
+      <span id="score">Score: 0</span>
+    </div>
+  </div>
+<!-- canvas hight and width 400 both -->
+<div id="game">
+    <canvas id="gameCanvas" class="border"></canvas>
+    </div>
+  </div>
+
+  <!-- Game Over Popup -->
+  <div id="game-over-popup" class="container text-center mt-5" style="display:none;">
+    <h2>Game Over</h2>
+    <div id="game-over-score"></div>
+    <button id="restart-button" class="btn btn-primary">Restart</button>
+    <button id="exit-button" class="btn btn-danger" onclick="exitGame()">Exit</button>
+  </div>
+
+  <script src="js/script.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
