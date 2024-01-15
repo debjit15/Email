@@ -14,6 +14,7 @@ const submitButton = document.querySelector("button[type='submit']");
   nextButton.addEventListener("click", async (event) => {
   event.preventDefault();
   const email = loginForm.email.value;
+    alert(email);
   try {
   const response = await fetch("./check-email (1).php", {
     method: "POST",
